@@ -1,3 +1,4 @@
+//Defining Color Property.
 //ProjectName>App>src>main>res>values>colors.xml
 //Colors.xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -13,6 +14,35 @@
 <color name="Grey">#AABBFF</color>
 </resources>
 
+//activity_main.xml
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent" tools:context=".MainActivity">
+<LinearLayout android:layout_width="409dp" android:layout_height="729dp"
+android:orientation="vertical" tools:layout_editor_absoluteX="1dp"
+tools:layout_editor_absoluteY="1dp">
+<TextView android:id="@+id/textView"android:layout_width="match_parent"
+android:layout_height="56dp" android:text="TextView"
+android:background="@color/Red" />
+<TextView android:id="@+id/textView2"
+android:layout_width="match_parent" android:layout_height="52dp" android:text="TextView"
+android:background="@color/Grey"
+/>
+<TextView android:id="@+id/textView3"
+android:layout_width="match_parent" android:layout_height="59dp" android:text="TextView"
+android:background="@color/Blue"
+/>
+<TextView android:id="@+id/textView4"
+android:layout_width="match_parent" android:layout_height="51dp" android:text="TextView"
+android:background="@color/Cyan"
+/>
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+//Defining Theme Property.
 //ProjectName>App>src>main>res>values>styles.xml
 //styles.xml
 <resources>
@@ -27,7 +57,7 @@
 </style>
 </resources>
 
-//ProjectName>App>src>main>res>values>strings.xml
+//Defining string property
 //strings.xml
 <resources>
 <string name="app_name">Practical 2 </string>
@@ -40,44 +70,6 @@ designed primarily for touch screen mobile devices such as smart phones and tabl
 </resources>
 
 //activity_main.xml
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto"
-xmlns:tools="http://schemas.android.com/tools" 
-android:layout_width="match_parent"
-android:layout_height="match_parent" 
-android:id="@+id/main"
-tools:context=".MainActivity">
-
-<LinearLayout android:layout_width="409dp" 
-android:layout_height="729dp"
-android:orientation="vertical" 
-tools:layout_editor_absoluteX="1dp"
-tools:layout_editor_absoluteY="1dp">
-<TextView android:id="@+id/textView"
-android:layout_width="match_parent"
-android:layout_height="56dp" 
-android:text="TextView"
-android:background="@color/Red" />
-<TextView android:id="@+id/textView2"
-android:layout_width="match_parent" 
-android:layout_height="52dp" 
-android:text="TextView"
-android:background="@color/Grey"
-/>
-<TextView android:id="@+id/textView3"
-android:layout_width="match_parent" 
-android:layout_height="59dp" 
-android:text="TextView"
-android:background="@color/Blue"
-/>
-<TextView android:id="@+id/textView4"
-android:layout_width="match_parent" 
-android:layout_height="51dp" 
-android:text="TextView"
-android:background="@color/Cyan"
-/>
 <TextView android:id="@+id/textView"
 android:layout_width="match_parent" android:layout_height="56dp"
 android:background="@color/Red"
@@ -86,7 +78,29 @@ android:text="@string/Heading" android:textSize="24sp" />
 android:layout_width="match_parent" android:layout_height="wrap_content"
 android:background="@color/Grey"
 android:text="@string/Description" android:textSize="24sp" />
+
+
+//Adding images and dimensions
+//dim.xml
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+<dimen name="textview_height">35dp</dimen>
+<dimen name="textview_width">150dp</dimen>
+<dimen name="font_size">26sp</dimen>
+</resources>
+
+//activity_main.xml
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+android:layout_height="match_parent" tools:context=".MainActivity">
+<LinearLayout android:layout_width="409dp" android:layout_height="729dp"
+android:orientation="vertical" tools:layout_editor_absoluteX="1dp"
+tools:layout_editor_absoluteY="1dp">
+<ImageView android:id="@+id/imageView" android:layout_width="match_parent"
+android:layout_height="wrap_content"
+app:srcCompat="@drawable/shahid" />
 </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
-
-
